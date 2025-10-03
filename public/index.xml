@@ -15,6 +15,13 @@
       <description></description>
     </item>
     <item>
+      <title>Contact Us</title>
+      <link>//localhost:1313/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/contact/</guid>
+      <description>&lt;h1 id=&#34;get-in-touch&#34;&gt;Get in Touch&lt;/h1&gt;&#xA;&lt;p&gt;Let&amp;rsquo;s discuss how ReacSoft can transform your business with cutting-edge AI solutions.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Navigation</title>
       <link>//localhost:1313/nav/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

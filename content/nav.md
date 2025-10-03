@@ -6,7 +6,7 @@ left_links:
   - "Services, #services, false"
   - "Technologies, #technologies, false"
 right_links:
-  - "Contact Us, #contact"
+  - "Contact Us, /contact, true"
 buttons:
   - "Get Started, #how-to, false"
 ---

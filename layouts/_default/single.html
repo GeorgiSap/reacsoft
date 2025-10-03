@@ -1,0 +1,110 @@
+{{ define "main" }}
+
+{{ if eq .Title "Contact Us" }}
+<main class="main-wrapper">
+    <section class="position-relative">
+        <div class="background-image-container">
+            <img src="{{ "img/banner-bg.svg" | absURL }}" loading="eager" alt="" class="background-cover-image">
+        </div>
+        <div class="transparent-navbar_spacer"></div>
+        <div class="page-padding">
+            <div class="container-large z-1">
+                <div class="padding-vertical padding-xlarge is-fixed is-bottom-2rem">
+                    <div class="container-small">
+                        <div class="text-align-center">
+                            <div class="spacer-xsmall"></div>
+                            <div class="margin-horizontal margin-small no-margin-tablet">
+                                <div class="text-color-base-dark">
+                                    <h1 class="heading-huge">{{ .Title }}</h1>
+                                </div>
+                            </div>
+                            <div class="spacer-small"></div>
+                            <div class="margin-horizontal margin-huge no-margin-mobile-landscape">
+                                <div class="rich-text-xlarge w-richtext">
+                                    <p>{{ .Description }}</p>
+                                </div>
+                            </div>
+                            <div class="spacer-xxlarge"></div>
+                            <div class="spacer-large"></div>
+                            <div class="spacer-medium"></div>
+
+                            <!-- Contact Details -->
+                            <div class="contact-details" style="max-width: 600px; margin: 4rem auto 0 auto;">
+                                <div style="display: flex; flex-direction: column; gap: 3rem; text-align: left;">
+
+                                    {{ if .Params.email }}
+                                    <div style="display: flex; align-items: center; gap: 1rem;">
+                                        <div style="min-width: 120px; color: #4E8CB8; font-weight: 600;">Email</div>
+                                        <a href="mailto:{{ .Params.email }}" style="color: #0d0f2c; text-decoration: none; font-size: 1.1rem;">
+                                            {{ .Params.email }}
+                                        </a>
+                                    </div>
+                                    {{ end }}
+
+                                    {{ if .Params.phone }}
+                                    <div style="display: flex; align-items: center; gap: 1rem;">
+                                        <div style="min-width: 120px; color: #4E8CB8; font-weight: 600;">Phone</div>
+                                        <a href="tel:{{ .Params.phone }}" style="color: #0d0f2c; text-decoration: none; font-size: 1.1rem;">
+                                            {{ .Params.phone }}
+                                        </a>
+                                    </div>
+                                    {{ end }}
+
+                                    {{ if .Params.address }}
+                                    <div style="display: flex; align-items: center; gap: 1rem;">
+                                        <div style="min-width: 120px; color: #4E8CB8; font-weight: 600;">Location</div>
+                                        <div style="color: #0d0f2c; font-size: 1.1rem;">
+                                            {{ .Params.address }}
+                                        </div>
+                                    </div>
+                                    {{ end }}
+
+                                    <div style="margin-top: 1rem; padding-top: 2rem; border-top: 1px solid #e6eaf4;">
+                                        <div style="display: flex; gap: 2rem; justify-content: center;">
+                                            {{ if .Params.linkedin }}
+                                            <a href="{{ .Params.linkedin }}" target="_blank" style="color: #4E8CB8; text-decoration: none; font-weight: 500;">
+                                                LinkedIn
+                                            </a>
+                                            {{ end }}
+
+                                            {{ if .Params.github }}
+                                            <a href="{{ .Params.github }}" target="_blank" style="color: #4E8CB8; text-decoration: none; font-weight: 500;">
+                                                GitHub
+                                            </a>
+                                            {{ end }}
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="spacer-xxlarge"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{{ else }}
+
+<!-- Default single page layout -->
+<main class="main-wrapper">
+    <div class="page-padding">
+        <div class="container-large">
+            <div class="padding-vertical padding-xlarge">
+                <article>
+                    <h1>{{ .Title }}</h1>
+                    <div class="content">
+                        {{ .Content }}
+                    </div>
+                </article>
+            </div>
+        </div>
+    </div>
+</main>
+
+{{ end }}
+
+{{ end }}
