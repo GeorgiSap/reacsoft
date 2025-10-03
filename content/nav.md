@@ -3,7 +3,7 @@ title: "Navigation"
 logo_link: "/"
 logo_image: "img/newlogo.png"
 left_links:
-  - "Services, #services, false"
+  - "Services, /#services, true"
   - "Technologies, #technologies, false"
 right_links:
   - "Contact Us, /contact, true"
