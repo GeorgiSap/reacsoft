@@ -29,8 +29,8 @@
 
 .navbar_logo-dark img {
     object-fit: contain;
-    max-height: 80px !important;
-    height: 80px !important;
+    max-height: 100px !important;
+    height: 100px !important;
     width: auto !important;
 }
 
@@ -72,6 +72,11 @@ footer .synthesia-logo-wrapper img {
 
 /* Navbar adjustments for larger logo */
 .navbar_container {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+}
+
+.navbar_logo-dark {
+    display: flex;
+    align-items: center;
 }
