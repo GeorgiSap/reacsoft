@@ -1,4 +1,8 @@
-baseURL = 'https://example.org/'
+baseURL = '/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'ReacSoft - AI Enterprise Solutions'
+description = 'Cutting-edge AI engineering and enterprise end-to-end system development'
 theme = 'long-teng'
+
+[params]
+    Author = 'ReacSoft'

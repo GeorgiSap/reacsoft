@@ -1,0 +1,59 @@
+/* ReacSoft Custom Styles - Matching Logo Colors */
+
+:root {
+    /* Override indigo colors with logo blues */
+    --indigo-400: #6BA3D4;  /* Light blue from logo */
+    --indigo-500-main: #4E8CB8;  /* Medium blue from logo */
+    --indigo-600: #2B5876;  /* Dark blue from logo */
+    --indigo-700: #1f3a52;  /* Darker blue for depth */
+
+    /* Additional theme adjustments */
+    --base-dark: #1a2332;
+}
+
+/* Enhanced gradient for hero text */
+.text-highlight-gradient {
+    background-image: linear-gradient(90deg, #6BA3D4, #4E8CB8 50%, #2B5876);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Logo container adjustments for better alignment */
+.navbar_logo-dark .logo-wrapper,
+.synthesia-logo-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar_logo-dark img,
+.synthesia-logo-wrapper img {
+    object-fit: contain;
+    max-height: 60px;
+    width: auto !important;
+}
+
+/* Button hover effects with logo colors */
+.button:hover,
+.button-secondary:hover {
+    background-color: #2B5876;
+    border-color: #2B5876;
+}
+
+/* Ensure proper logo sizing in navbar */
+.logo-medium {
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer logo sizing */
+footer .synthesia-logo-wrapper img {
+    max-height: 50px;
+}
