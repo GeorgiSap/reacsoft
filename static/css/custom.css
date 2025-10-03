@@ -24,14 +24,17 @@
 .synthesia-logo-wrapper {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
 }
 
 .navbar_logo-dark img {
     object-fit: contain;
-    max-height: 100px !important;
-    height: 100px !important;
+    max-height: 60px !important;
+    height: 60px !important;
     width: auto !important;
+    display: block;
+    vertical-align: middle;
 }
 
 .synthesia-logo-wrapper img {
@@ -71,12 +74,35 @@ footer .synthesia-logo-wrapper img {
 }
 
 /* Navbar adjustments for larger logo */
+.navbar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .navbar_container {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+    min-height: 90px;
 }
 
 .navbar_logo-dark {
     display: flex;
     align-items: center;
+    height: 100%;
+}
+
+.z-9999.flex-child-fixed {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
 }
