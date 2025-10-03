@@ -27,7 +27,13 @@
     height: 100%;
 }
 
-.navbar_logo-dark img,
+.navbar_logo-dark img {
+    object-fit: contain;
+    max-height: 80px !important;
+    height: 80px !important;
+    width: auto !important;
+}
+
 .synthesia-logo-wrapper img {
     object-fit: contain;
     max-height: 60px;
@@ -56,4 +62,16 @@
 /* Footer logo sizing */
 footer .synthesia-logo-wrapper img {
     max-height: 50px;
+}
+
+/* Navigation menu items sizing */
+.navbar_dropdown-toggle .paragraph-medium {
+    font-size: 1.1rem !important;
+    font-weight: 500;
+}
+
+/* Navbar adjustments for larger logo */
+.navbar_container {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
